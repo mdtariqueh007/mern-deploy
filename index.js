@@ -66,8 +66,8 @@ app.post("/create-checkout-session",async(req,res)=>{
                     quantity : 1
                 }
             }),
-            success_url : `/success`,
-            cancel_url : `/cancel`
+            success_url : `https://long-newt-overshirt.cyclic.app/success`,
+            cancel_url : `https://long-newt-overshirt.cyclic.app/cancel`
         })
 
         res.json({url:session.url})
