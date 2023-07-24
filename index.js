@@ -48,7 +48,7 @@ const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 // stripe.(process.env.STRIPE_PRIVATE_KEY);
 
-app.post("/create-checkout-session",async(req,res)=>{
+app.post(`/create-checkout-session`,async(req,res)=>{
     try{
 
         const session = await stripe.checkout.sessions.create({
